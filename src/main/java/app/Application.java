@@ -13,12 +13,11 @@ public class Application extends javafx.application.Application {
 
   @Override
   public void start(Stage stage) throws Exception {
-    Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("scene.fxml")));
+    Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Application.fxml")));
 
     Scene scene = new Scene(root);
-    scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("styles.css")).toExternalForm());
 
-    stage.setTitle("JavaFX and Gradle");
+    stage.setTitle("To-Do List");
     stage.setScene(scene);
     stage.show();
   }
