@@ -1,3 +1,8 @@
+/*
+ * UCF COP3330 Fall 2021 Application Assignment 1 Solution
+ * Copyright 2021 Blake Lochmandy
+ */
+
 package app;
 
 import java.util.ArrayList;
@@ -20,10 +25,9 @@ public class ToDo {
     // for each list
     // write "List: " + title
     // for each item
-    // write "Item: " + name + ", " + description + ", " + dueDate + ", " + complete
+    // write "\t Item: " + name + ", " + description + ", " + dueDate + ", " + complete
 
     // catch error
-
   }
 
 
@@ -44,5 +48,8 @@ public class ToDo {
     // catch error
   }
 
-
+  public List<ToDoList> getToDoLists() {
+    //return toDoLists
+    return null;
+  }
 }
