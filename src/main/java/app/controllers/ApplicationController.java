@@ -11,6 +11,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.ListView;
+import javafx.scene.control.TreeView;
 
 public class ApplicationController implements Initializable {
 
@@ -42,9 +44,18 @@ public class ApplicationController implements Initializable {
   private ChoiceBox<String> showStatusBox;
 
   @FXML
+  private TreeView<String> toDoItems;
+
+  @FXML
+  private ListView<String> toDoLists;
+
+  @FXML
   public void initialize(URL url, ResourceBundle rb) {
 
     //make a new To Do object called lists
+
+    // populate toDoLists with lists
+    // populate toDoItems with items stored in list
 
     // when addList is clicked
     // open AddList.fxml
@@ -54,7 +65,6 @@ public class ApplicationController implements Initializable {
 
     // when exportLists is clicked
     // open ExportLists.fxml
-
 
     // when importLists is clicked
     // open ImportLists.fxml
@@ -67,13 +77,42 @@ public class ApplicationController implements Initializable {
 
     // when showStatusBox = All
     // show all items on current to do list
+    // populate toDoItems with (current to do list).showAll()
 
     // when showStatusBox = Incomplete
     // show all incomplete items on current to do list
+    // populate toDoItems with (current to do list).showIncomplete()
 
     // when showStatusBox = Complete
     // show all complete items on current to do list
+    // populate toDoItems with (current to do list).showComplete()
 
+    // When list titles are clicked
+    // populate toDoItems with items in corresponding list
+
+    // When list titles are double-clicked
+    // make title editable
+    // if title is at least 3 characters
+    // save new title
+
+    // When item names are double-clicked
+    // make name editable
+    // if name is at least 3 characters
+    // save new name
+
+    // When item descriptions are double-clicked
+    // make description editable
+    // save new description
+
+    // When item due dates are double-clicked
+    // make dueDate editable
+    //if name is in YYYY-MM-DD format
+    // save new dueDate
+
+    // When items are clicked
+    // if incomplete
+    // markAsComplete
+    // else markAsIncomplete
   }
 
 }

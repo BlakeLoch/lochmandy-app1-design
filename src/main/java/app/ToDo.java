@@ -23,6 +23,7 @@ public class ToDo {
   public void saveLists(String outputFile) {
     // create outputFile in try with resources
     // for each list
+    // if save is true
     // write "List: " + title
     // for each item
     // write "\t Item: " + name + ", " + description + ", " + dueDate + ", " + complete

@@ -6,15 +6,17 @@ class Application {
 }
 
 class ApplicationController {
--ResourceBundle resources;
--URL location;
--Button addList;
--Button addTask;
--Button exportLists;
--Button importLists;
+-ResourceBundle resources
+-URL location
+-Button addList
+-Button addTask
+-Button exportLists
+-Button importLists
 -Button removeList
--Button removeTask;
--ChoiceBox<String> showStatusBox;
+-Button removeTask
+-ChoiceBox<String> showStatusBox
+-TreeView<String> toDoItems
+-ListView<String> toDoLists
 
 +initialize(URL url, ResourceBundle rb)
 }
@@ -52,40 +54,45 @@ class ToDoItem {
 -String description
 -String dueDate
 -boolean complete
+-boolean delete
 
 +ToDoItem(String name, String description, String dueDate)
 +getName()
 +getDescription()
 +getDueDate()
 +isComplete()
++getDelete()
 +setName(String name)
 +setDescription(String description)
 +setDueDate(String dueDate)
 +markAsComplete()
++markAsIncomplete()
++delete()
++removeDelete()
 }
 
 class AddItemController {
--ResourceBundle resources;
--URL location;
--Button addItemButton;
--DatePicker addItemDate;
--TextArea addItemDescription;
--ChoiceBox<String> addItemList;
--TextField addItemName;
+-ResourceBundle resources
+-URL location
+-Button addItemButton
+-DatePicker addItemDate
+-TextArea addItemDescription
+-ChoiceBox<String> addItemList
+-TextField addItemName
 +initialize()
 }
 
 class AddListController {
--ResourceBundle resources;
--URL location;
+-ResourceBundle resources
+-URL location
 -Button addListButton
 -TextField addListTitle
 +initialize()
 }
 
 class ExportListsController {
--ResourceBundle resources;
--URL location;
+-ResourceBundle resources
+-URL location
 -Button exportButton
 -TextField exportFile
 ListView<String> exportSelectLists
@@ -93,8 +100,8 @@ ListView<String> exportSelectLists
 }
 
 class ImportListsController {
--ResourceBundle resources;
--URL location;
+-ResourceBundle resources
+-URL location
 -Button importButton
 -TextField importFile
 ListView<String> importSelectLists
@@ -102,16 +109,16 @@ ListView<String> importSelectLists
 }
 
 class RemoveItemsController {
--ResourceBundle resources;
--URL location;
+-ResourceBundle resources
+-URL location
 -Button removeItemsButton
 ListView<String> removeSelectItems
 +initialize()
 }
 
 class RemoveListsController {
--ResourceBundle resources;
--URL location;
+-ResourceBundle resources
+-URL location
 -Button removeListsButton
 ListView<String> removeSelectLists
 +initialize()
@@ -125,6 +132,13 @@ ApplicationController <|-- ExportListsController
 ApplicationController <|-- ImportListsController
 ApplicationController <|-- RemoveItemsController
 ApplicationController <|-- RemoveListsController
+
+AddItemController <|-- ToDo
+AddListController <|-- ToDo
+ExportListsController <|-- ToDo
+ImportListsController <|-- ToDo
+RemoveItemsController <|-- ToDo
+RemoveListsController <|-- ToDo
 
 
 ToDo *-- ToDoList

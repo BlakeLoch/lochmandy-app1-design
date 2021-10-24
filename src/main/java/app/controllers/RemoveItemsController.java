@@ -27,6 +27,21 @@ public class RemoveItemsController {
 
   @FXML
   void initialize() {
+
+    // populate removeSelectItems with names of ToDoItems and selectors
+
+    // when Item is selected
+    // item.Delete
+
+    // when Item is deselected
+    // item.RemoveDelete
+
+    // when removeItemsButton is clicked
+    // for each item
+    // if delete is true
+    // (To Do).<CurrentToDoList>.remove(item)
+    // disable RemoveItems
+
   }
 
 }

@@ -11,6 +11,7 @@ public class ToDoItem {
   private String description;
   private String dueDate;
   private boolean complete;
+  private boolean delete;
 
   // Class constructor
   public ToDoItem(String name, String description, String dueDate) {
@@ -18,6 +19,7 @@ public class ToDoItem {
     // set description to description
     // set dueDate to dueDate
     // set complete to false
+    // set delete to false
   }
 
   public String getName() {
@@ -40,7 +42,10 @@ public class ToDoItem {
     return false;
   }
 
-
+  public boolean getDelete() {
+    // return delete
+    return false;
+  }
 
   public void setName(String name) {
    // if name is at least 3 characters
@@ -63,4 +68,18 @@ public class ToDoItem {
   public void markAsComplete() {
     // set complete to true
   }
+
+  public void markAsInComplete() {
+    // set complete to false
+  }
+
+  public void delete() {
+    // set delete to true
+  }
+
+  public void removeDelete() {
+    // set delete to false
+  }
+
+
 }

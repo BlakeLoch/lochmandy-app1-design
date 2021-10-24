@@ -27,6 +27,24 @@ public class RemoveListsController {
 
   @FXML
   void initialize() {
+
+    // populate removeSelectItems with titles of ToDoLists and selectors
+
+    // for each ToDoList
+    // ToDoList.save
+
+    // when ToDoList is selected
+    // ToDoList.UnSave
+
+    // when ToDoList is deselected
+    // ToDoList.save
+
+    // when removeSelectLists is clicked
+    // for each ToDoList
+    // if save is false
+    // (To Do).remove(ToDoList)
+    // disable RemoveLists
+
   }
 
 }

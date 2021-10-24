@@ -40,6 +40,29 @@ public class AddItemController {
   @FXML
   void initialize() {
 
+    // when addItemDate is used
+    // save value as YYYY-MM-DD string
+
+    // when text is entered in addItemDescription
+    // save value as string
+
+    // when text is entered in addItemName
+    // if addItemName.length is not less than 3
+    // save value as string
+
+    // initialize addItemList to contain list of titles of ToDoLists in (To Do) object
+    // when a ToDoList is selected
+    // save title of ToDoList as string
+
+    // when addItemButton is clicked
+    // if name is blank or a ToDoList is not selected
+    // throw an error
+    //else
+    // create ToDoItem with name, description and date
+    // add ToDoItem to (To Do).getToDoLists().selectedToDoList
+    // disable AddItems
+
+
   }
 
 }

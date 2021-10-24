@@ -31,6 +31,22 @@ public class ExportListsController {
 
   @FXML
   void initialize() {
+
+    // populate exportSelectLists with titles of ToDoLists and selectors
+
+    // when text is entered in exportFile
+    // save value as string
+
+    // when ToDoList is selected
+    // ToDoList.save
+
+    // when ToDoList is deselected
+    // ToDoList.UnSave
+
+    // when exportButton is clicked
+    // (To Do).saveLists(exportFile)
+    // disable ExportLists
+
   }
 
 }

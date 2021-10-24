@@ -31,6 +31,26 @@ public class ImportListsController {
 
   @FXML
   void initialize() {
+
+    // when text is entered in importFile
+    // save value as string
+
+    // (To Do).readFile(importFile)
+
+    // populate importSelectLists with titles of ToDoLists and selectors
+
+    // when ToDoList is selected
+    // ToDoList.save
+
+    // when ToDoList is deselected
+    // ToDoList.UnSave
+
+    // when importButton is clicked
+    // for each ToDoList in inputFile
+    // if save is true
+    // (To Do).add ToDoList
+    // disable ImportLists
+
   }
 
 }

@@ -43,6 +43,14 @@ class ToDoItemTest {
   }
 
   @Test
+  void getDelete() {
+    // create ToDoItem with a constructor
+    // actual = ToDoItem.getDelete
+    // check if actual is false
+  }
+
+
+  @Test
   void setName() {
     // create ToDoItem with a constructor
     // expected = new name
@@ -75,6 +83,32 @@ class ToDoItemTest {
     // ToDoItem.markAsComplete
     // actual = ToDoItem.isComplete
     // check if actual is true
+  }
+
+  @Test
+  void markAsInComplete() {
+    // create ToDoItem with a constructor
+    // ToDoItem.markAsComplete
+    // ToDoItem.markAsIncomplete
+    // actual = ToDoItem.isComplete
+    // check if actual is false
+  }
+
+  @Test
+  void delete() {
+    // create ToDoItem with a constructor
+    // ToDoItem.delete
+    // actual = ToDoItem.getDelete
+    // check if actual is true
+  }
+
+  @Test
+  void RemoveDelete() {
+    // create ToDoItem with a constructor
+    // ToDoItem.delete
+    // ToDoItem.RemoveDelete
+    // actual = ToDoItem.getDelete
+    // check if actual is false
   }
 
 }

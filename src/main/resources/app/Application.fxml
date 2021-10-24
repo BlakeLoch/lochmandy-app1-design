@@ -23,7 +23,7 @@
               <items>
                 <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="340.0" prefWidth="192.0" style="-fx-background-color: #ffffff;">
                      <children>
-                        <ListView layoutY="31.0" prefHeight="276.0" prefWidth="189.0" />
+                        <ListView fx:id="toDoLists" layoutY="31.0" prefHeight="276.0" prefWidth="189.0" />
                         <HBox alignment="CENTER" layoutY="310.0" prefHeight="31.0" prefWidth="189.0" spacing="3.0">
                            <children>
                               <Button fx:id="addList" alignment="CENTER" mnemonicParsing="false" text="+" textAlignment="CENTER">
@@ -57,7 +57,7 @@
                   </AnchorPane>
                 <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="313.0" prefWidth="391.0" style="-fx-background-color: #ffffff;">
                      <children>
-                        <TreeView layoutY="31.0" prefHeight="276.0" prefWidth="416.0" />
+                        <TreeView fx:id="toDoItems" layoutY="31.0" prefHeight="276.0" prefWidth="416.0" />
                         <Button fx:id="addItem" alignment="CENTER" layoutX="6.0" layoutY="313.0" mnemonicParsing="false" text="+" textAlignment="CENTER">
                            <font>
                               <Font name="Lucida Grande" size="13.0" />
@@ -68,7 +68,7 @@
                               <Font name="Lucida Grande" size="13.0" />
                            </font>
                         </Button>
-                        <Label layoutX="9.0" layoutY="1.0" text="Tasks" textFill="#1573b2">
+                        <Label layoutX="9.0" layoutY="1.0" text="Items" textFill="#1573b2">
                            <font>
                               <Font name="Lucida Grande" size="21.0" />
                            </font>
